@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color:#2685da;
+}    
+
+main {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    margin-bottom: 9px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.generalValues, .mainSquare {
+    width: 95vw;
+}
+
+.mainSquare h1 {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#allExpenses{
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.mainSquare input {
+    display: block;
+    width: 100%;
+    /* box-shadow: 0 3px 19px rgba(0, 0, 0, 0.4); não aparece no safari*/
+    border-color: rgba(158, 157, 157, 0.35);
+    outline: none;
+    border-radius: 6px;
+    height: 30px;
+    padding: 0px 10px;
+    margin: 10px 0;
+}
+
+.mainSquare button {
+    background-color: #2685da;
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.budget, .expense{
+    margin-bottom: 25px;
+}
+
+.budget h2 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 5px;
+}
+
+.expense h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.titlesOverhead {
+    display: flex;
+    margin: 30px 0px 8px 0px;
+}
+
+.titlesOverhead p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.titlesOverhead .titleExpense {
+    margin-right: 40px;
+}
+
+.listExpenses li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c7f1cf;
+    color: #0c5c05;
+    font-weight: bold;
+    padding: 30px 20px;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+img#iconTrash{
+    cursor: pointer;
+}
+
+.generalValues div {
+    text-align: center;
+}
+
+.generalBudget, .generalExpense {
+    margin-bottom: 40px;
+}
+
+.generalValues div h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.generalValues div p {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.generalBudget p {
+    color: #78ce71;
+}
+
+.generalExpense p {
+    color: #e44f3c;
+}
+
+.sale p {
+    color: #64d2ff;
+}
+
+@media screen and (min-width: 930px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+    main {
+        height: 100vh;
+        width: 970px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mainSquare{
+        width: 600px;
+    }
+
+    .mainSquare h1{
+        font-size: 1.9em;
+        margin-bottom: 30px;
+    }
+    
+    .mainSquare button {
+        font-size: 16px;
+    }
+    
+    .expense h2, .budget h2 {
+        font-size: 0.9em;
+    }
+    
+    .titlesOverhead .titleExpense {
+        margin-right: 190px;
+    }
+
+    .titlesOverhead p {
+        font-size: 16px;
+    }
+    
+    .generalValues{
+        width: 290px;
+        height: 558px;
+    }
+}

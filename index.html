@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <title>Controle de Gastos</title>
+    <link rel="icon" href="img/alvo128x128.png"> 
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+         <section class="mainSquare">
+             <h1>Controle de Gastos</h1>
+
+            <div class="budget">
+                <h2>Total Orçamento</h2>
+                <input type="number" id="inputValueBudget"> <button id="btnAddBudget">Adicionar orçamento</button>
+            </div>
+
+            <div class="expense">
+                <h2>Nome Despesa</h2>
+                <input type="text" id="inputNameExpense">
+
+                <h2>Valor Despesa</h2>     
+                <input type="number" id="inputValueExpense"> <button id="btnAddExpense">Calcular</button>
+            </div>
+
+            <div>
+                <select name="selectExpensesAll" id="allExpenses">
+                    <option value="" disabled selected>Ver todas as despesas</option>
+                </select>
+            </div>
+
+               <ul class="listExpenses">
+                   <li>
+                       <h3 id="pExpense">------</h3>
+                       <p id="pValueExpense">R$0</p>
+                       <img title="Lixeira" src="img/lixeira.png" alt="Ícone Lixeira" id="iconTrash">
+                   </li>
+               </ul>
+            </div>
+         </section>
+
+         <section class="generalValues">
+             <div class="generalBudget">
+                 <h3 id="titleSquareBudget">Orçamento</h3>
+                 <p id="displayBudget">+ R$0</p>
+             </div>
+
+             <div class="generalExpense">
+                 <h3>Despesas</h3>
+                 <p id="displayExpenses">- R$0</p>
+             </div>
+
+             <div class="sale">
+                 <h3>Saldo</h3>
+                 <p id="displaySale">R$0</p>
+             </div>
+         </section>
+    </main>
+</body>
+</html>
